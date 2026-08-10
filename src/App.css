@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+.create-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.create-box {
+  width: 550px;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.create-box h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.create-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.create-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.create-box label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.create-box input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.create-box input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.create-box h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.watch-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-button {
+  padding: 12px;
+  border: 1px dashed #2563eb;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.remove-button {
+  width: fit-content;
+  padding: 6px 10px;
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-button {
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  background: #111827;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.generate-button:hover {
+  background: #374151;
+}
