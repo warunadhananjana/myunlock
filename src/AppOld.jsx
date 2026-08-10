@@ -22,8 +22,8 @@ function App() {
     e.preventDefault();
 
     const url = isLogin
-      ? 'http://localhost:5000/api/auth/login'
-      : 'http://localhost:5000/api/auth/register';
+      ? 'https://myunlock-backend-production.up.railway.app/api/auth/login'
+      : 'https://myunlock-backend-production.up.railway.app/api/auth/register';
 
     try {
       const body = isLogin
@@ -131,20 +131,23 @@ function App() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/links/create', {
-        method: 'POST',
+      const response = await fetch(
+        'https://myunlock-backend-production.up.railway.app/api/links/create',
+        {
+          method: 'POST',
 
-        headers: {
-          'Content-Type': 'application/json',
+          headers: {
+            'Content-Type': 'application/json',
 
-          Authorization: `Bearer ${token}`,
-        },
+            Authorization: `Bearer ${token}`,
+          },
 
-        body: JSON.stringify({
-          destinationUrl,
-          watchLinks,
-        }),
-      });
+          body: JSON.stringify({
+            destinationUrl,
+            watchLinks,
+          }),
+        }
+      );
 
       const data = await response.json();
 
